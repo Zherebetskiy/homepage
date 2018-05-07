@@ -2,15 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /*1rem = 10px*/
+  font-size: 62.5%;
+  /*1rem = 10px*/
 }
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -21,6 +25,7 @@ body {
   min-height: 100vh;
   padding: 10rem 0;
 }
+
 ::selection {
   color: #fff;
   background: #58a3b0;
@@ -29,9 +34,11 @@ body {
 .small-width {
   width: 65% !important;
 }
+
 .medium-width {
   width: 75% !important;
 }
+
 .large-width {
   width: 85% !important;
 }
@@ -42,6 +49,7 @@ body {
   min-height: 80vh;
   background-color: #eee;
 }
+
 .light-shadow {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
 }
@@ -50,10 +58,12 @@ body {
   display: flex;
   font-size: 1.6rem;
 }
+
 .resume__left {
   width: 70%;
   padding: 4rem;
 }
+
 .resume__right {
   flex: 1;
   background-color: #1f211c;
@@ -63,21 +73,25 @@ body {
   margin-bottom: 10rem;
   text-transform: uppercase;
 }
+
 .resume__job {
   font-size: 1.8rem;
   color: #58a3b0;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .resume__name-surname {
   text-transform: uppercase;
   font-size: 6.5rem;
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
+
 .profile {
   text-transform: uppercase;
 }
+
 .label {
   border-bottom: 1px solid #58a3b0;
   margin-bottom: 2rem;
@@ -87,6 +101,7 @@ body {
   position: relative;
   text-transform: uppercase;
 }
+
 .label-icon-wrap {
   position: absolute;
   top: 0;
@@ -95,6 +110,7 @@ body {
   width: 3rem;
   background: #d8dad9;
 }
+
 .label__icon {
   position: absolute;
   width: 2rem;
@@ -103,6 +119,7 @@ body {
   top: 0.8rem;
   fill: #58a3b0;
 }
+
 .profile__description {
   font-size: 1.3rem;
   margin-bottom: 3rem;
@@ -111,12 +128,15 @@ body {
 .experience__items {
   list-style: none;
 }
+
 .experience__item {
   display: flex;
 }
+
 .experience__item:not(:last-child) {
   margin-bottom: 5rem;
 }
+
 .experience__years {
   flex: 1;
   text-transform: uppercase;
@@ -124,13 +144,16 @@ body {
   font-size: 1.3rem;
   padding: 1rem;
 }
+
 .experience__description {
   flex: 2;
 }
+
 .experience__title {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .photo {
   padding: 4rem;
   text-align: center;
@@ -170,10 +193,12 @@ body {
   display: block;
   font-weight: 700;
 }
+
 .education__years {
   font-weight: 300;
   font-size: 1.2rem;
 }
+
 .education_description {
   margin: 2rem 0;
 }
@@ -183,16 +208,19 @@ body {
   padding-top: 0;
   list-style: none;
 }
+
 .skills__title {
   color: #fff;
   font-weight: 400;
   margin-bottom: 1rem;
 }
+
 .progres-bar {
   height: 1.3rem;
   background: #fff;
   position: relative;
 }
+
 .progres-bar__line {
   position: absolute;
   display: block;
@@ -207,6 +235,7 @@ body {
   list-style: none;
   padding-bottom: 2rem;
 }
+
 .contacts__link {
   display: flex;
   align-items: center;
@@ -215,13 +244,16 @@ body {
   color: #fff;
   transition: all 0.2s;
 }
+
 .contacts__link:hover {
   background: #58a3b0;
 }
+
 .contacts__icon {
   height: 3rem;
   width: 3rem;
 }
+
 .contacts__name {
   margin-left: 1rem;
 }
@@ -229,8 +261,17 @@ body {
 .languages__items {
   list-style: none;
   color: #fff;
-  padding: 5rem;
+  padding: 1rem;
   padding-top: 0;
+  display: inline-block;
+}
+
+.languages__item {
+  display: inline-block;
+  background: #58a3b0;
+  margin: 3px;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -247,6 +288,7 @@ body {
     font-size: 5rem;
   }
 }
+
 @media only screen and (max-width: 640px) {
   .resume {
     flex-direction: column;
