@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, #3a777a, #26676a);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 10rem 0;
+}
+::selection {
+  color: #fff;
+  background: #58a3b0;
+}
+
+.small-width {
+  width: 65% !important;
+}
+.medium-width {
+  width: 75% !important;
+}
+.large-width {
+  width: 85% !important;
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  min-height: 80vh;
+  background-color: #eee;
+}
+.light-shadow {
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.resume {
+  display: flex;
+  font-size: 1.6rem;
+}
+.resume__left {
+  width: 70%;
+  padding: 4rem;
+}
+.resume__right {
+  flex: 1;
+  background-color: #1f211c;
+}
+
+.resume__title {
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+}
+.resume__job {
+  font-size: 1.8rem;
+  color: #58a3b0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.resume__name-surname {
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+}
+.profile {
+  text-transform: uppercase;
+}
+.label {
+  border-bottom: 1px solid #58a3b0;
+  margin-bottom: 2rem;
+  padding: 0.6rem 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+.label-icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3rem;
+  background: #d8dad9;
+}
+.label__icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 0.5rem;
+  top: 0.8rem;
+  fill: #58a3b0;
+}
+.profile__description {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.experience__items {
+  list-style: none;
+}
+.experience__item {
+  display: flex;
+}
+.experience__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.experience__years {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.experience__description {
+  flex: 2;
+}
+.experience__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.photo {
+  padding: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.photo img {
+  width: 20rem;
+}
+
+.about__label {
+  padding: 1rem 5rem;
+  background-color: #58a3b0;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.about__icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 1.4rem;
+  top: 1.4rem;
+}
+
+.education__items {
+  list-style: none;
+  color: #fff;
+  padding: 5rem;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.education__years,
+.education__university {
+  display: block;
+  font-weight: 700;
+}
+.education__years {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.education_description {
+  margin: 2rem 0;
+}
+
+.skills__items {
+  padding: 5rem;
+  padding-top: 0;
+  list-style: none;
+}
+.skills__title {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.progres-bar {
+  height: 1.3rem;
+  background: #fff;
+  position: relative;
+}
+.progres-bar__line {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  background: #58a3b0;
+}
+
+.contacts__items {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+.contacts__link:hover {
+  background: #58a3b0;
+}
+.contacts__icon {
+  height: 3rem;
+  width: 3rem;
+}
+.contacts__name {
+  margin-left: 1rem;
+}
+
+.languages__items {
+  list-style: none;
+  color: #fff;
+  padding: 5rem;
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 1070px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 57%;
+  }
+  .resume__name-surname {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .resume {
+    flex-direction: column;
+  }
+  .resume__left {
+    order: 1;
+  }
+  .photo img {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+}
