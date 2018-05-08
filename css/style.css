@@ -299,10 +299,18 @@ body {
   .photo img {
     width: 25rem;
   }
+  .resume__left
+  {
+  	width:40rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   html {
     font-size: 45%;
+  }
+  .resume__left
+  {
+  	width:40rem;
   }
 }
